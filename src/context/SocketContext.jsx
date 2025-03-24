@@ -20,7 +20,7 @@ export const SocketProvider = ({ children }) => {
   // Initialize socket connection
   useEffect(() => {
     if (token && user) {
-      const newSocket = io("http://localhost:5000", {
+      const newSocket = io("https://smartambulance.onrender.com", {
         auth: { token },
         withCredentials: true,
       })

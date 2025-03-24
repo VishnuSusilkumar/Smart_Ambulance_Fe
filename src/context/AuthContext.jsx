@@ -17,7 +17,7 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate()
 
   // Set axios defaults
-  axios.defaults.baseURL = "http://localhost:5000/api"
+  axios.defaults.baseURL = "https://smartambulance.onrender.com/api"
   if (token) {
     axios.defaults.headers.common["x-auth-token"] = token
   }
